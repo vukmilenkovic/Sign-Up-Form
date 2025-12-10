@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    outline: 0.5px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+}
+
+.left-side {
+    
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-side > * {
+    outline: 0.5px solid blue;
+    
+}
+
+img {
+    max-height: 720px;
+    max-width: auto;
+}
+
+.form {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.field {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+}
+
