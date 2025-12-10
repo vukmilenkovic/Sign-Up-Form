@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('src/fonts/DMSans_24pt-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'DM Sans', sand-serif;
+    font-weight: 200;
 }
 .container {
     outline: 0.5px solid red;
