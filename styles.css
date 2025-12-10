@@ -13,7 +13,8 @@ body {
 }
 
 .left-side {
-    
+    position: relative;
+    display: inline-block;
 }
 
 .right-side {
@@ -28,9 +29,33 @@ body {
     
 }
 
-img {
+.iphone {
     max-height: 720px;
     max-width: auto;
+    display: block;
+}
+
+.office {
+    position: absolute;
+    height: 96%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    border-radius: 45px;
+    z-index: 10;
+}
+
+.notch {
+    position: absolute;
+    height: 20px;
+    width: 70px;
+    top: 5%;
+    left: 50%;
+    border-radius: 30px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .form {
