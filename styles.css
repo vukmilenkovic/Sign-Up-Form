@@ -9,11 +9,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'DM Sans', sand-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 200;
 }
 .container {
-    outline: 0.5px solid red;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -24,6 +23,7 @@ body {
 .left-side {
     position: relative;
     display: inline-block;
+    
 }
 
 .right-side {
@@ -31,25 +31,27 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     height: 720px;
 }
 
 .right-side > * {
-    outline: 0.5px solid blue;
+    border-radius: 12px;
     flex: 1;
     
 }
 .header {
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(250, 249, 249);
 }
 
 .footer {
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(250, 249, 249);
 }
 .iphone {
     max-height: 720px;
     max-width: auto;
     display: block;
+    
 }
 
 .office {
@@ -84,7 +86,7 @@ body {
     left: 50%;
     z-index: 10;
     border-radius: 50%;
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 75%);
 }
 
 
@@ -93,6 +95,7 @@ body {
     padding: 1rem;
     box-sizing: border-box;
     width: 100%;
+    
     
 }
 
@@ -111,6 +114,32 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+
+.header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer {
+    padding: 10px;
+}
+.header p {
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px lightgray;
 }
 
 
