@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 65%;
+    width: 75%;
 }
 
 .left-side {
@@ -31,21 +31,37 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     height: 720px;
 }
 
 .right-side > * {
-    border-radius: 12px;
+    
     flex: 1;
     
 }
 .header {
     background-color: rgb(250, 249, 249);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .footer {
     background-color: rgb(250, 249, 249);
+    padding: 10px;
+}
+
+.footer p {
+    margin-right: 100px;
+}
+
+.header p {
+    font-size: 24px;
+    font-weight: 5600;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    
 }
 .iphone {
     max-height: 720px;
@@ -89,6 +105,14 @@ body {
     transform: translate(-50%, 75%);
 }
 
+.logo-background {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: gray;
+    
+}
 
 .form {
     margin: 0 auto;
@@ -102,7 +126,8 @@ body {
 .fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    
 }
 
 .column {
@@ -113,25 +138,19 @@ body {
     flex: 1 1 calc(50% - 1rem);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-
-.header {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.footer {
-    padding: 10px;
-}
-.header p {
-    font-size: 24px;
-    font-weight: 700;
+    padding-bottom: 20px;
     
 }
+
+input {
+    border: 1px solid #E5E7EB;
+    outline: none;
+}
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0px 0 1px 1px lightgray;
+}
+
 
 button {
     background-color: #596D48;
@@ -142,5 +161,11 @@ button {
     box-shadow: 3px 3px 2px lightgray;
 }
 
+.password:invalid {
+    border-style: red;
+}
 
 
+.password:invalid{
+    border-color: red;
+}
