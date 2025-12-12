@@ -162,10 +162,10 @@ button {
 }
 
 .password:invalid {
-    border-style: red;
+    border-color: red;
 }
 
 
-.password:invalid{
+.confirm_password:invalid{
     border-color: red;
 }
